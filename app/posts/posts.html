@@ -1,0 +1,31 @@
+<div class="spinner" ng-if="postVm.posts.length === 0"></div>
+<div class="TableContainer">
+    <table id="TablePost">
+        <thead>
+            <tr>
+                <th ng-click="postVm.setSortProperty('id')">
+                    <i ng-if="postVm.sortByProperty ==='id'" 
+                    ng-class="postVm.ascendOrder ? 'fa fa-caret-down' : 'fa fa-caret-up'"></i>
+                    <a>Id</a>
+                </th>
+                <th ng-click="postVm.setSortProperty('title')">
+                    <i ng-if="postVm.sortByProperty ==='title'" 
+                    ng-class="postVm.ascendOrder ? 'fa fa-caret-down' : 'fa fa-caret-up'"></i>
+                    <a>Title</a>
+                </th>
+                <th ng-click="postVm.setSortProperty('body')">
+                    <i ng-if="postVm.sortByProperty ==='body'" 
+                    ng-class="postVm.ascendOrder ? 'fa fa-caret-down' : 'fa fa-caret-up'"></i>
+                    <a>Body</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="post in postVm.posts">
+                <td>{{post.id}}</td>
+                <td>{{post.title}}</td>
+                <td>{{post.body}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

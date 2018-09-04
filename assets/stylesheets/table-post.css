@@ -1,0 +1,33 @@
+div.TableContainer {
+    overflow: x-auto;
+}
+
+table#TablePost {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+table#TablePost th {
+    padding: 10px;
+    border-bottom: 2px solid #6678b1;
+    border-right: 2px solid #dddddd;
+    background: #b9c9fe;
+    color: #039;
+    min-width: 30px;
+}
+
+table#TablePost td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid #dddddd;
+}
+
+table#TablePost tr:hover {
+    background-color: #f5f5f5;
+}
+table#TablePost th a:hover {
+    cursor:pointer;
+}

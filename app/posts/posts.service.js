@@ -6,7 +6,7 @@ postService.$inject = ['$http', '$q']
 
 function postService($http, $q) {
 
-    var baseUrl = "http://jsonplaceholder.typicode.com/"
+    var baseUrl = "https://jsonplaceholder.typicode.com/"
 
     var Baseheaders = {
         "Accept": "application/json",
